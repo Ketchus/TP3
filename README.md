@@ -14,19 +14,20 @@ Pour exécuter le fichier il faut faire: ./analyse.sh param1 param2 param3
 2. Exercice : vérification du nombre de paramètres
 code:
 #!/bin/bash
-if [ $# -ne 2 ]; then
-    echo "Vous devez entrer exactement 2 paramètres."
+if [ $# -ne 2 ]
+     then echo "Vous devez entrer exactement 2 paramètres."
     exit 1
+   else
+    mot1="$1"
+    mot2="$2"
+    CONCAT="$mot1$mot2"
+    echo $CONCAT
 fi
-mot1="$1"
-mot2="$2"
-CONCAT="$mot1$mot2"
-echo $CONCAT
 Pour exécuter le fichier il faut faire: ./concat.sh mot1 mot2
 
 
 
-3. Exercice : argument type et droits
+4. Exercice : argument type et droits
 code:
 #!/bin/bash
 
